@@ -17,7 +17,17 @@ ad_proc im_wiki_home_component { } {
 ad_proc im_wiki_project_component { project_id } {
     Wiki component to be shown at the system home page
 } {
-    return [im_wiki_base_component im_project $project_id]
+    set result ""
+    if {[im_package_exists_p xowiki]} {
+	set params [list \
+			[list project_id $project_id] \
+	]
+	append result [ad_parse_template -params $params "/packages/intranet-wiki/lib/xowiki-project-portlet"]
+    }
+    if {[im_package_exists_p wiki]} {
+	append result [im_wiki_base_component im_project $project_id]
+    }
+    return $result
 }
 
 ad_proc im_wiki_company_component { company_id } {
