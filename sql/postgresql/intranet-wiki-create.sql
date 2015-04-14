@@ -179,7 +179,7 @@ begin
 		'/intranet-confdb/new',			-- page_url
 		null,					-- view_name
 		120,					-- sort_order
-		'im_wiki_base_component im_conf_item $conf_item_id' -- component_tcl
+		'im_wiki_conf_item_component $conf_item_id' -- component_tcl
 	);
 	return 0;
 end;$$ language 'plpgsql';

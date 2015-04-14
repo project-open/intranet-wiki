@@ -33,8 +33,35 @@ ad_proc im_wiki_project_component { project_id } {
 ad_proc im_wiki_company_component { company_id } {
     Wiki component to be shown at the system home page
 } {
-    return [im_wiki_base_component im_company $company_id]
+    set result ""
+    if {[im_package_exists_p xowiki]} {
+	set params [list \
+			[list company_id $company_id] \
+	]
+	append result [ad_parse_template -params $params "/packages/intranet-wiki/lib/xowiki-company-portlet"]
+    }
+    if {[im_package_exists_p wiki]} {
+	append result [im_wiki_base_component im_company $company_id]
+    }
+    return $result
 }
+
+ad_proc im_wiki_conf_item_component { conf_item_id } {
+    Wiki component to be shown at the system home page
+} {
+    set result ""
+    if {[im_package_exists_p xowiki]} {
+	set params [list \
+			[list conf_item_id $conf_item_id] \
+	]
+	append result [ad_parse_template -params $params "/packages/intranet-wiki/lib/xowiki-conf-item-portlet"]
+    }
+    if {[im_package_exists_p wiki]} {
+	append result [im_wiki_base_component im_conf_item $conf_item_id]
+    }
+    return $result
+}
+
 
 ad_proc im_wiki_office_component { office_id } {
     Wiki component to be shown at the system home page
@@ -83,7 +110,11 @@ ad_proc im_wiki_base_component { object_type object_id } {
     db_foreach wikis $wikis_sql {
 
 	incr ctr
-	append wikis_html "<b>$wiki_title</b><br>\n"
+	append wikis_html "<b>Old $wiki_title</b><br>\n"
+	append wikis_html "<p>There is still a 'wiki' package installed in your system.<br>"
+	append wikis_html "This old wiki has been replaced by the 'XoWiki' package.<br>"
+	append wikis_html "Please copy your files to /xowiki/ and uninstall the old wiki.</p>"
+
 
 	if {0 != $object_id} {
 	    append wikis_html "<li><A href=\"/$wiki_mount/$object_name_mangled\">$object_name</A>\n"
