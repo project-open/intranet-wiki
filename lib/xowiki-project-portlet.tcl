@@ -65,7 +65,7 @@ if {!$finished_p && 0 == $project_page_id} {
     set url [export_vars -base "/xowiki/" {object_type {edit-new 1} name source_item_id title}]
 
     set html "<ul><li><a href=\"$url\" target=\"_blank\"
-    >[lang::message::lookup "" intranet-wiki.Need_to_create_project_page "No XoWiki page exists for your project '$project_nr' yet.<br>Please create one by clicking on this link."]</a>
+    >[lang::message::lookup "" intranet-wiki.Need_to_create_project_page "No XoWiki page exists for your project '%project_nr%' yet.<br>Please create one by clicking on this link."]</a>
     </li></ul>"
     set finished_p 1
     ad_return_template 
@@ -76,7 +76,7 @@ if {!$finished_p} {
     set url "/xowiki/$project_nr"
 
     set html "<ul><li><a href=\"$url\" target=\"_blank\"
-    >[lang::message::lookup "" intranet-wiki.XoWiki_page_for_project_nr "See the XoWiki page for this project '$project_nr' - '$project_name'."]</a>
+    >[lang::message::lookup "" intranet-wiki.XoWiki_page_for_project_nr "See the XoWiki page for this project '%project_nr%' - '%project_name%'."]</a>
     </li></ul>"
     set finished_p 1
     ad_return_template 
