@@ -81,7 +81,7 @@ ad_proc im_wiki_base_component { object_type object_id } {
     Wiki component to be shown at the system home page
 } {
     set folder_id [wiki::get_folder_id]
-    set user_id [ad_get_user_id]
+    set user_id [ad_conn user_id]
     set colspan 1
 	
     # Get the list of currently existing Wiki installations
