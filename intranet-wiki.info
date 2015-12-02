@@ -16,7 +16,7 @@
         <description format="text/plain">This package provides an integration between P/O business objects (project, customer, users, ...) and Wiki pages via several plug-in components</description>
 
         <provides url="intranet-wiki" version="3.2"/>
-        <requires url="wiki" version="0.2d"/>
+        <requires url="xowiki" version="0.2d"/>
         <requires url="intranet-core" version="3.2"/>
 
         <callbacks>
