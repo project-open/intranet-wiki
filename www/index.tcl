@@ -15,6 +15,11 @@ ad_page_contract {
 
 }
 
+ad_returnredirect "/xowiki/"
+
+
+
+
 set user_id [auth::require_login]
 set return_url "[ad_conn url]?[ad_conn query]"
 set parent_var :folder_id
