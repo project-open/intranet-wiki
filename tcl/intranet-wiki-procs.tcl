@@ -117,7 +117,7 @@ ad_proc im_wiki_base_component { object_type object_id } {
     db_foreach wikis $wikis_sql {
 
         incr ctr
-        append wikis_html "<b>$wiki_title</b><br>\n"
+        append wikis_html "<hr><b>Deprecated: Old $wiki_title</b><br>\n"
 
         if {0 != $object_id} {
             append wikis_html "<li><A href=\"/$wiki_mount/$object_name_mangled\">$object_name</A>\n"
@@ -152,6 +152,12 @@ ad_proc im_wiki_base_component { object_type object_id } {
 
     # Skip the component if there is no Wiki
     if {0 == $ctr} { return "" }
+
+    append wikis_html "<br>Please tell your system administrator to 
+    go to /acs-admin/apm/ and to delete the package 'Wiki' in order 
+    to delete this deprecated version of the wiki. This old 'wiki' 
+    has been replaced by 'XoWiki'. Please migrate existing 'wiki' 
+    pages to the new 'XoWiki'."
 
     return $wikis_html
 }
