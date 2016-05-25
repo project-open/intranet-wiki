@@ -255,7 +255,7 @@ BEGIN
 		'/intranet-wiki/',		-- url
 		75,				-- sort_order
 		v_main_menu,			-- parent_menu_id
-		'[im_package_exists wiki]'	-- p_visible_tcl
+		'[im_package_exists_p wiki]'	-- p_visible_tcl
 	);
 
 	PERFORM acs_permission__grant_permission(v_menu, v_employees, 'read');
@@ -297,7 +297,7 @@ BEGIN
 		'/xowiki/',			-- url
 		76,				-- sort_order
 		v_main_menu,			-- parent_menu_id
-		'[im_package_exists xowiki]'	-- p_visible_tcl
+		'[im_package_exists_p xowiki]'	-- p_visible_tcl
 	);
 
 	PERFORM acs_permission__grant_permission(v_menu, v_employees, 'read');
