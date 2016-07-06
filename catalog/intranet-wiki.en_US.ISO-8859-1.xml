@@ -8,6 +8,8 @@
   <msg key="Company_Wiki">Company Wiki</msg>
   <msg key="HomeWiki">Home Wiki</msg>
   <msg key="Main_Index">Main Index</msg>
+  <msg key="Need_to_create_conf_item_template">You need to create a conf_item template.
+Just click on this link and then press &#39;Edit&#39; to customize the template.</msg>
   <msg key="Project_Wiki">Project Wiki</msg>
   <msg key="User_Wiki">Wiki</msg>
 </message_catalog>
