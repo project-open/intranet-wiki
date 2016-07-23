@@ -9,6 +9,7 @@
   <msg key="HomeWiki">Home Wiki</msg>
   <msg key="Main_Index">Hauptverzeichnis</msg>
   <msg key="Need_to_create_conf_item_template">Sie müssen eine Wiki-Vorlage für das Konfigurationselement anlegen. Bitte klicken Sie auf diesen Link und danach auf &#39;Bearbeiten&#39;, um die Vorlage anzupassen.</msg>
+  <msg key="Need_to_create_project_page">Es existiert noch keine Seite für das Projekt &#39;internal_sla&#39; im XoWiki. &lt;br&gt;Bitte berzeugen Sie eine neue Seite, indem Sie auf diesen Link klicken.</msg>
   <msg key="Project_Wiki">Projekt Wiki</msg>
   <msg key="User_Wiki">Wiki</msg>
 </message_catalog>

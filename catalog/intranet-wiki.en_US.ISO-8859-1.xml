@@ -10,6 +10,8 @@
   <msg key="Main_Index">Main Index</msg>
   <msg key="Need_to_create_conf_item_template">You need to create a conf_item template.
 Just click on this link and then press &#39;Edit&#39; to customize the template.</msg>
+  <msg key="Need_to_create_project_page">No XoWiki page exists for your project &#39;internal_sla&#39; yet.&lt;br&gt;
+Please create one by clicking on this link.</msg>
   <msg key="Project_Wiki">Project Wiki</msg>
   <msg key="User_Wiki">Wiki</msg>
 </message_catalog>
