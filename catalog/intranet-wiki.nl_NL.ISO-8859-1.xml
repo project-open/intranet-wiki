@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <message_catalog package_key="intranet-wiki" locale="nl_NL" charset="ISO-8859-1">
 
-  <msg key="Admin_All_Pages">Admin alle pagina's</msg>
+  <msg key="Admin_All_Pages">Admin alle pagina&#39;s</msg>
   <msg key="Admin_Wiki_Changes">Admin Wiki wijzigingen</msg>
   <msg key="Admin_Wiki_Permissions">Wiki bevoegdheden</msg>
   <msg key="Categories">Categorieën</msg>
