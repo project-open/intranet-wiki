@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<message_catalog package_key="intranet-wiki" package_version="3.4.0.7.0" locale="pl_PL" charset="utf-8">
+<message_catalog package_key="intranet-wiki" locale="pl_PL" charset="utf-8">
 
   <msg key="Company_Wiki">Baza wiedzy firmy</msg>
   <msg key="HomeWiki">Główna baza wiedzy</msg>
+  <msg key="Need_to_create_company_page">Firma &#39;%company_name%&#39; nie ma jeszcze strony XoWiki.&lt;br/&gt;
+Kliknij na ten link, aby ją utworzyć.</msg>
+  <msg key="Need_to_create_company_template">Musisz utworzyć wzorzec dla firmy.&lt;br/&gt;Po prostu kliknij na ten link, a później naciśnij &#34;Edytuj&#34;, żeby dostosować wzorzec.</msg>
   <msg key="Project_Wiki">Baza wiedzy projektu</msg>
   <msg key="User_Wiki">Baza wiedzy</msg>
 </message_catalog>

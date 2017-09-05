@@ -8,6 +8,10 @@
   <msg key="Company_Wiki">Company Wiki</msg>
   <msg key="HomeWiki">Home Wiki</msg>
   <msg key="Main_Index">Main Index</msg>
+  <msg key="Need_to_create_company_page">No XoWiki page exists for your company &#39;%company_name%&#39; yet.&lt;br/&gt;
+Please create one by clicking on this link.</msg>
+  <msg key="Need_to_create_company_template">You need to create a company template.&lt;br/&gt;
+Just click on this link and then press &#39;Edit&#39; to customize the template.</msg>
   <msg key="Need_to_create_conf_item_template">You need to create a conf_item template.
 Just click on this link and then press &#39;Edit&#39; to customize the template.</msg>
   <msg key="Need_to_create_project_page">No XoWiki page exists for your project &#39;internal_sla&#39; yet.&lt;br&gt;
