@@ -2,7 +2,7 @@
 <message_catalog package_key="intranet-wiki" locale="de_DE" charset="ISO-8859-1">
 
   <msg key="Admin_All_Pages">Admin alle Seiten</msg>
-  <msg key="Admin_Wiki_Changes">Admin Wiki-Änderungen</msg>
+  <msg key="Admin_Wiki_Changes">Admin - Wiki-Änderungen</msg>
   <msg key="Admin_Wiki_Permissions">Wiki Rechte</msg>
   <msg key="Categories">Kategorien</msg>
   <msg key="Company_Wiki">Wiki</msg>
@@ -16,6 +16,6 @@ Klicken Sie auf diesen Link und danach auf &#34;Bearbeiten&#34;, um die Vorlage 
   <msg key="Need_to_create_project_page">Es existiert noch keine Seite für das Projekt &#39;internal_sla&#39; im XoWiki. &lt;br&gt;Bitte berzeugen Sie eine neue Seite, indem Sie auf diesen Link klicken.</msg>
   <msg key="Need_to_create_project_template">Sie haben noch keine XoWiki Vorlage für Projekte erstellt.&lt;br&gt;
 Klicken Sie auf diesen Link und danach auf &#34;Bearbeiten&#34;, um die Vorlage anzupassen.</msg>
-  <msg key="Project_Wiki">Projekt Wiki</msg>
+  <msg key="Project_Wiki">Projekt-Wiki</msg>
   <msg key="User_Wiki">Wiki</msg>
 </message_catalog>
