@@ -8,6 +8,11 @@
   <msg key="Company_Wiki">Wiki Bedrijf</msg>
   <msg key="HomeWiki">Wiki Hoofdpagina</msg>
   <msg key="Main_Index">Hoofd Index</msg>
+  <msg key="Need_to_create_company_page">Er bestaat geen XoWiki pagina voor je bedrijf &#39;%company_name%&#39; yet.&lt;br/&gt; Je kan er een maken door te klikken op deze link.</msg>
+  <msg key="Need_to_create_company_template">Je moet een template voor het bedrijf maken.&lt;br/&gt; Klik op deze link en druk op &#39;Enter&#39; om de template op maat te maken.</msg>
+  <msg key="Need_to_create_conf_item_template">Je moet een conf-Item template maken. Klik op deze link en druk op &#39;Enter&#39; om de template op maat te maken.</msg>
+  <msg key="Need_to_create_project_page">Er bestaat geen XoWiki pagina voor je project &lt;br/&gt; Je kan er een maken door te klikken op deze link.</msg>
+  <msg key="Need_to_create_project_template">Je moet een project template maken. Klik op deze link en druk op &#39;Enter&#39; om de template op maat te maken.</msg>
   <msg key="Project_Wiki">Wiki Project</msg>
   <msg key="User_Wiki">Wiki</msg>
 </message_catalog>
