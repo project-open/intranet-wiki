@@ -19,6 +19,9 @@ ad_proc im_wiki_home_component { } {
 ad_proc im_wiki_project_component { project_id } {
     Wiki component to be shown at the system home page
 } {
+    set parent_id [db_string parent_id "select parent_id from im_projects where project_id = :project_id"]
+    if {"" ne $parent_id} { return "" }
+
     set result ""
     if {[im_package_exists_p xowiki]} {
 	set params [list \
