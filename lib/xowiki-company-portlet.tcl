@@ -3,7 +3,7 @@
 # Copyright (C) 2015 ]company-open[
 #
 # All rights reserved. Please check
-# http://www.company-open.com/license/ for details.
+# https://www.company-open.com/license/ for details.
 
 # ----------------------------------------------------------------------
 # Variables and Parameters
