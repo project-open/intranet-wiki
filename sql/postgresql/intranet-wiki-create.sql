@@ -309,3 +309,46 @@ end;$$ language 'plpgsql';
 select inline_0 ();
 drop function inline_0 ();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create or replace function inline_0 ()
+returns integer as $$
+declare
+	v_plugin		integer;
+	v_employees		integer;
+BEGIN
+	select group_id into v_employees from groups where group_name = 'Employees';
+
+-- Home Page - Set the wiki to the very end.
+	v_plugin := im_component_plugin__new (
+		null, 'im_component_plugin', now(), null, null, null,
+		'Home XoWiki News',			-- plugin_name
+		'intranet-wiki',			-- package_name
+		'bottom',				-- location
+		'/intranet/index',			-- page_url
+		null,					-- view_name
+		60,					-- sort_order
+		'im_xowiki_page_component -page "/xowiki/news"'	-- component_tcl
+	);
+
+	PERFORM acs_permission__grant_permission(v_plugin, v_employees, 'read');
+	return 0;
+end;$$ language 'plpgsql';
+select inline_0 ();
+drop function inline_0 ();
+

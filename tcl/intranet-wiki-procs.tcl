@@ -164,3 +164,26 @@ ad_proc im_wiki_base_component { object_type object_id } {
 
     return $wikis_html
 }
+
+
+ad_proc im_xowiki_page_component {
+    -page
+    { -iframe_width 800 }
+    { -iframe_height 400 }
+} {
+    XoWiki page to be shown somewhere
+} {
+    if {"" eq $page} { return "" }
+
+    set result ""
+    if {[im_package_exists_p xowiki]} {
+	set params [list \
+			[list page $page] \
+			[list iframe_width $iframe_width] \
+			[list iframe_height $iframe_height] \
+	]
+	append result [ad_parse_template -params $params "/packages/intranet-wiki/lib/xowiki-page"]
+    }
+
+    return $result
+}
