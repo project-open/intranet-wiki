@@ -309,23 +309,6 @@ end;$$ language 'plpgsql';
 select inline_0 ();
 drop function inline_0 ();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 create or replace function inline_0 ()
 returns integer as $$
 declare
@@ -334,7 +317,7 @@ declare
 BEGIN
 	select group_id into v_employees from groups where group_name = 'Employees';
 
--- Home Page - Set the wiki to the very end.
+	-- Home Page - Set the wiki to the very end.
 	v_plugin := im_component_plugin__new (
 		null, 'im_component_plugin', now(), null, null, null,
 		'Home XoWiki News',			-- plugin_name
